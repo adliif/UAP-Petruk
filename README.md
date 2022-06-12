@@ -4,23 +4,11 @@ Berisi codingan sebuah projek tema sehari-hari untuk menyelesaikan UAP mata kuli
 Nama anggota kelompok 3 :
  > Adli Fiqrullah
    NPM. 2117051075
-   
- > Adli Fiqrullah
-   NPM. 2117051075
   
- > Alkhadafi Saddam Simparico
+ > Alkhadafi Saddam Simparico    
    NPM. 2117051049
-  
- > Auvar Mahsa Fahlevi
-   NPM. 2117051027
-  
- > Adinda Aulia Sari    
-   NPM. 2117051018
  
- > Sinta Nurhalifah     
-   NPM. 2117051015
+ > Auvar Mahsa Fahlevi     
+   NPM. 2117051027
 
- > Adli Fiqrullah       
-   NPM. 2117051075
-  
 ~~ Happy Ngoding
