@@ -11,4 +11,13 @@ Nama anggota kelompok 3 :
 > Auvar Mahsa Fahlevi
   NPM. 2117051027
   
+ > Adinda Aulia Sari    
+   NPM. 2117051018
+ 
+ > Sinta Nurhalifah     
+   NPM. 2117051015
+
+ > Adli Fiqrullah       
+   NPM. 2117051075
+  
 ~~ Happy Ngoding
