@@ -42,3 +42,4 @@ int main(){
 	Subsidi();
 	
 return 0;}
+.
