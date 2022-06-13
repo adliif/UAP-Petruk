@@ -18,23 +18,22 @@ int main(){
 		
 		switch(q){
 			case 1 : 
-				cout<<"Jumlah antrian : "<<Q.size()<<endl;
+				cout<<"Jumlah antrian : "<< Q.size() <<endl;
 				break;
 			
 			case 2 : 
-				cout<<"Masukkan data  : ";cin>>i; Q.push(i);
+				cout<<"Masukkan data  : "; cin>>i; Q.push(i);
 				break;
 			
 			case 3 : 
 				i = Q.front();
-					 Q.pop();
-					 cout<<"Data "<<i<<" sudah dihapus"<<endl;
+				Q.pop();
+				cout<<"Sembako "<< i << " sudah diambil" << endl;
 				break;
 			
 			case 4 : 
 				exit(1);
 				break;
-			
 			default : 
 				cout<<"Pilihan anda salah"<<endl;
 		}
