@@ -17,23 +17,26 @@ int main(){
 		system("cls");
 		
 		switch(q){
-			case 1 : cout<<"Jumlah antrian : "<<Q.size()<<endl;
-			break;
+			case 1 : 
+				cout<<"Jumlah antrian : "<<Q.size()<<endl;
+				break;
 			
-			case 2 : cout<<"Masukkan data  : ";cin>>i; Q.push(i);
-			break;
+			case 2 : 
+				cout<<"Masukkan data  : ";cin>>i; Q.push(i);
+				break;
 			
-			case 3 : i = Q.front();
+			case 3 : 
+				i = Q.front();
 					 Q.pop();
 					 cout<<"Data "<<i<<" sudah dihapus"<<endl;
-			break;
+				break;
 			
-			case 4 : exit(1);
-			break;
+			case 4 : 
+				exit(1);
+				break;
 			
-			default : cout<<"Pilihan anda salah"<<endl;
+			default : 
+				cout<<"Pilihan anda salah"<<endl;
 		}
 	}
-	
-	
 }
