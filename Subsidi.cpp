@@ -7,11 +7,11 @@ int main(){
 	
 	while(1){
 		cout<<"<<========================================>>"<<endl;
-		cout<<"1. Jumlah antrian sembako"<<endl;
-		cout<<"2. Masukkan data warga ke antrian"<<endl;
-		cout<<"3. Hapus data warga dari antrian"<<endl;
-		cout<<"4. Exit"<<endl;
-		cout<<"<<=========================================>>"<<endl;
+		cout<<"||    1. Jumlah antrian sembako           ||"<<endl;
+		cout<<"||    2. Masukkan data warga ke antrian   ||"<<endl;
+		cout<<"||    3. Hapus data warga dari antrian    ||"<<endl;
+		cout<<"||    4. Exit                             ||"<<endl;
+		cout<<"<<========================================>>"<<endl;
 		cout<<endl;
 		cout<<"Masukkan pilihan anda : ";cin>>q;
 		system("cls");
