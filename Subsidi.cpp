@@ -5,7 +5,7 @@ int main(){
 	queue <int> Q;
 	int q, i;
 	
-	while(1){
+	while(true){
 		cout<<"<<========================================>>"<<endl;
 		cout<<"||    1. Jumlah antrian sembako           ||"<<endl;
 		cout<<"||    2. Masukkan data warga ke antrian   ||"<<endl;
