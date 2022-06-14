@@ -19,7 +19,7 @@ void display(queue <string> sampel){
 
 void Subsidi(){
 	queue <string> sampel;
-	string nama;
+	char nama[100];
     	int pilihan;
 	
 	while(true){
