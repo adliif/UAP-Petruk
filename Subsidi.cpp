@@ -5,9 +5,13 @@ using namespace std;
 
 void display(queue <string> sampel){
     cout << "\n============================================\n";
-    while(!sampel.empty()){
+    if(sampel.empty()){
+        cout << "\t\t Data kosong";
+    }else{
+        while(!sampel.empty()){
         cout << "|" << sampel.front() << "|";
         sampel.pop();
+        }
     }
     cout << "\n============================================\n";
 }
@@ -61,5 +65,7 @@ void Subsidi(){
 }
 
 int main(){
+	
     Subsidi();
+	
 }
