@@ -10,7 +10,7 @@ void display(queue <string> sampel){
         cout << "\t\t Data kosong";
     }else{
         while(!sampel.empty()){
-        cout << " |" << sampel.front() << "| ";
+        cout << "|" << sampel.front() << "| ";
         sampel.pop();
         }
     }
