@@ -1,44 +1,67 @@
 #include <iostream>
-#include <queue.h>
+#include <conio.h>
+#include <queue>
 using namespace std;
 
-	void Subsidi(){
-		queue <int> Q;
-		int q, i;
+void display(queue <string> sampel){
+    cout << "\n============================================\n";
+    while(!sampel.empty()){
+        cout << "|" << sampel.front() << "|";
+        sampel.pop();
+    }
+    cout << "\n============================================\n";
+}
+
+void Subsidi(){
+	queue <string> sampel;
+	string nama;
+    	int pilihan;
 	
-		while(1){
-			cout<<"<<========================================>>"<<endl;
-			cout<<"||    1. Jumlah antrian sembako           ||"<<endl;
-			cout<<"||    2. Masukkan data warga ke antrian   ||"<<endl;
-			cout<<"||    3. Hapus data warga dari antrian    ||"<<endl;
-			cout<<"||    4. Exit                             ||"<<endl;
-			cout<<"<<========================================>>"<<endl;
-			cout<<endl;
-			cout<<"Masukkan pilihan anda : ";cin>>q;
-			system("cls");
-			
-			switch(q){
-				case 1 : cout<<"Jumlah antrian : "<<Q.size()<<endl;
-				break;
+	while(true){
+        system("cls");
+        display(sampel);
+
+		cout << "++========================================++\n"
+		     << "||   [1] Jumlah antrian sembako           ||\n"
+		     << "||   [2] Masukkan data warga ke antrian   ||\n"
+		     << "||   [3] Hapus data warga dari antrian    ||\n"
+		     << "||   [4] Exit                             ||\n"
+		     << "++========================================++\n\n" 
+		     << "Masukkan pilihan anda : "; cin >> pilihan;
+
+		switch(pilihan){
+			case 1 : 
+                		cout << "Jumlah antrian : " << sampel.size() << endl;
+				getch(); break;
 				
-				case 2 : cout<<"Masukkan data  : ";cin>>i; Q.push(i);
-				break;
-				
-				case 3 : i = Q.front();
-						 Q.pop();
-						 cout<<"Data "<<i<<" sudah dihapus"<<endl;
-				break;
-				
-				case 4 : exit(1);
-				break;
-				
-				default : cout<<"Pilihan anda salah"<<endl;
-			}
-		}
+			case 2 : 
+                		cout << "Masukkan data  : "; cin >> nama; sampel.push(nama);
+                 		cout << "\nAtas nama " << nama << " telah ditambahkan ke dalam antrian\n";
+		        	getch(); break;
+		
+			case 3 : 
+                 		if(!sampel.empty()){
+                    			sampel.pop();
+	  	        		cout << "\nSubsidi atas nama " << nama << " sudah diambil\n";
+                		}else {
+                    			cout << "Data Kosong\n";
+                		}
+				getch(); break;
+
+			case 4 : 
+                		cout << "Terima kasih\n";
+                		exit(1);
+				getch(); break;
+
+			default : 
+                		cout << "Pilihan anda salah\n";
+                		getch();
+	      	}
 	}
+}
 
 int main(){
 	
-	Subsidi();
+    Subsidi();
 	
-return 0;}
+}
