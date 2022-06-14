@@ -61,7 +61,5 @@ void Subsidi(){
 }
 
 int main(){
-	
     Subsidi();
-	
 }
