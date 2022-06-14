@@ -27,7 +27,7 @@ void QueueSubsidi(){
        		display(sampel);
 
 		cout << "++========================================++\n"
-		     << "|| [1] - Jumlah antrian sembako           ||\n"
+		     << "|| [1] - Jumlah antrian subsidi           ||\n"
 		     << "|| [2] - Masukkan data warga ke antrian   ||\n"
 		     << "|| [3] - Hapus data warga dari antrian    ||\n"
 		     << "|| [4] - Exit                             ||\n"
