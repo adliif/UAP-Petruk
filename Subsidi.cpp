@@ -17,32 +17,34 @@ void display(queue <string> sampel){
     cout << "\n============================================\n";
 }
 
-void Subsidi(){
+void QueueSubsidi(){
 	queue <string> sampel;
 	char nama[100];
-    	int pilihan;
+    	int pil;
 	
 	while(true){
         	system("cls");
        		display(sampel);
 
 		cout << "++========================================++\n"
-		     << "||   [1] Jumlah antrian sembako           ||\n"
-		     << "||   [2] Masukkan data warga ke antrian   ||\n"
-		     << "||   [3] Hapus data warga dari antrian    ||\n"
-		     << "||   [4] Exit                             ||\n"
+		     << "|| [1] - Jumlah antrian sembako           ||\n"
+		     << "|| [2] - Masukkan data warga ke antrian   ||\n"
+		     << "|| [3] - Hapus data warga dari antrian    ||\n"
+		     << "|| [4] - Exit                             ||\n"
 		     << "++========================================++\n\n" 
-		     << "Masukkan pilihan anda : "; cin >> pilihan;
+		     << "Masukkan pilihan anda : "; cin >> pil;
 
-		switch(pilihan){
+		switch(pil){
 			case 1 : 
                 		cout << "Jumlah antrian : " << sampel.size() << endl;
-				getch(); break;
+				getch();
+				break;
 				
 			case 2 : 
                 		cout << "Masukkan data  : "; cin.ignore(1, '\n'); gets(nama); sampel.push(nama);
                  		cout << "\nAtas nama " << nama << " telah ditambahkan ke dalam antrian\n";
-		        	getch(); break;
+		        	getch();
+				break;
 		
 			case 3 : 
                  		if(!sampel.empty()){
@@ -51,12 +53,14 @@ void Subsidi(){
                 		}else {
                     			cout << "Data Kosong\n";
                 		}
-				getch(); break;
+				getch();
+				break;
 
 			case 4 : 
                 		cout << "Terima kasih\n";
                 		exit(1);
-				getch(); break;
+				getch();
+				break;
 
 			default : 
                 		cout << "Pilihan anda salah\n";
@@ -67,6 +71,6 @@ void Subsidi(){
 
 int main(){
 	
-    Subsidi();
+    QueueSubsidi();
 	
 }
