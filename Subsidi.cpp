@@ -18,8 +18,8 @@ void Subsidi(){
     	int pilihan;
 	
 	while(true){
-        system("cls");
-        display(sampel);
+        	system("cls");
+       		display(sampel);
 
 		cout << "++========================================++\n"
 		     << "||   [1] Jumlah antrian sembako           ||\n"
