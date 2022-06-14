@@ -1,5 +1,6 @@
 #include <iostream>
 #include <conio.h>
+#include <string.h>
 #include <queue>
 using namespace std;
 
@@ -39,14 +40,14 @@ void Subsidi(){
 				getch(); break;
 				
 			case 2 : 
-                		cout << "Masukkan data  : "; cin >> nama; sampel.push(nama);
+                		cout << "Masukkan data  : "; cin.ignore(1, '\n'); gets(nama); sampel.push(nama);
                  		cout << "\nAtas nama " << nama << " telah ditambahkan ke dalam antrian\n";
 		        	getch(); break;
 		
 			case 3 : 
                  		if(!sampel.empty()){
-                    			sampel.pop();
-	  	        		cout << "\nSubsidi atas nama " << nama << " sudah diambil\n";
+	  	        		cout << "\nSubsidi atas nama " << sampel.front() << " sudah diambil\n";
+					sampel.pop();
                 		}else {
                     			cout << "Data Kosong\n";
                 		}
