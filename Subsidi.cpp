@@ -7,7 +7,7 @@ using namespace std;
 void display(queue <string> sampel){
     cout << "\n============================================\n";
     if(sampel.empty()){
-        cout << "\t\t Data kosong";
+        cout << "\t\t Data subsidi kosong";
     }else{
         while(!sampel.empty()){
         cout << "|" << sampel.front() << "| ";
@@ -41,7 +41,7 @@ void QueueSubsidi(){
 				break;
 				
 			case 2 : 
-                		cout << "Masukkan data  : "; cin.ignore(1, '\n'); gets(nama); sampel.push(nama);
+                		cout << "Masukkan nama penerima subsidi  : "; cin.ignore(1, '\n'); gets(nama); sampel.push(nama);
                  		cout << "\nAtas nama " << nama << " telah ditambahkan ke dalam antrian\n";
 		        	getch();
 				break;
@@ -51,7 +51,7 @@ void QueueSubsidi(){
 	  	        		cout << "\nSubsidi atas nama " << sampel.front() << " sudah diambil\n";
 					sampel.pop();
                 		}else {
-                    			cout << "Data Kosong\n";
+                    			cout << "Data penerima subsidi Kosong\n";
                 		}
 				getch();
 				break;
