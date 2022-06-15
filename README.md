@@ -1,4 +1,4 @@
-# UAP Pemrograman Terstruktur
+# Sistem pembagian subsidi
 Berisi codingan Queue untuk projek tema sehari-hari seperti antrian dalam pembagian subsidi 
 dengan tujuan untuk menyelesaikan UAP mata kuliah Pemrograman Terstruktur responsi
 
