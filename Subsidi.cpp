@@ -15,8 +15,8 @@ void display(queue <string> sampel){
         cout << "\t    Data subsidi kosong";
     }else{
         while(!sampel.empty()){
-        cout << "|" << sampel.front() << "| ";
-        sampel.pop();
+        	cout << "|" << sampel.front() << "| ";
+        	sampel.pop();
         }
     }
     cout << "\n<><><><><><><><><><><><><><><><><><><><><><>\n";
@@ -25,7 +25,7 @@ void display(queue <string> sampel){
 void QueueSubsidi(){
 	queue <string> sampel;
 	char nama[100];
-    	int pil;
+	int pil;
 	
 	while(true){
         	system("cls");
@@ -45,37 +45,37 @@ void QueueSubsidi(){
 
 		switch(pil){
 			case 1 : 
-                		cout << "Jumlah antrian subsidi : " << sampel.size() << endl;
+				cout << "Jumlah antrian subsidi : " << sampel.size() << endl;
 				getch();
 				break;
 				
 			case 2 : 
-                		cout << "Masukkan nama penerima subsidi  : "; 
+				cout << "Masukkan nama penerima subsidi  : "; 
 				cin.ignore(1, '\n'); gets(nama); 
 				sampel.push(nama);
-                 		cout << "\nAtas nama " << nama << " telah ditambahkan ke dalam antrian\n";
-		        	getch();
+				cout << "\nAtas nama " << nama << " telah ditambahkan ke dalam antrian\n";
+				getch();
 				break;
 		
 			case 3 : 
-                 		if(!sampel.empty()){
-	  	        		cout << "\nSubsidi atas nama " << sampel.front() << " sudah diambil\n";
+				if(!sampel.empty()){
+					cout << "\nSubsidi atas nama " << sampel.front() << " sudah diambil\n";
 					sampel.pop();
-                		}else {
-                    			cout << "Data penerima subsidi Kosong\n";
+				}else {
+					cout << "Data penerima subsidi Kosong\n";
                 		}
 				getch();
 				break;
 
-			case 4 : 
-                		cout << "Terima kasih\n";
-                		exit(1);
+			case 4 :
+				cout << "Terima kasih\n";
+				exit(1);
 				getch();
 				break;
 
-			default : 
-                		cout << "Pilihan anda salah\n";
-                		getch();
+			default :
+				cout << "Pilihan anda salah\n";
+				getch();
 	      	}
 	}
 }
