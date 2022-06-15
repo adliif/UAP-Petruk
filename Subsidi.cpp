@@ -1,13 +1,12 @@
 #include <iostream>
 #include <conio.h>
-#include <string.h>
 #include <queue>
 using namespace std;
 
 void display(queue <string> sampel){
     cout << "\n============================================\n";
     if(sampel.empty()){
-        cout << "\t\t Data subsidi kosong";
+        cout << "\t    Data subsidi kosong";
     }else{
         while(!sampel.empty()){
         cout << "|" << sampel.front() << "| ";
@@ -33,10 +32,11 @@ void QueueSubsidi(){
 		     << "|| [4] - Exit                             ||\n"
 		     << "++========================================++\n\n" 
 		     << "Masukkan pilihan anda : "; cin >> pil;
+		     cout<<endl;
 
 		switch(pil){
 			case 1 : 
-                		cout << "Jumlah antrian : " << sampel.size() << endl;
+                		cout << "Jumlah antrian subsidi : " << sampel.size() << endl;
 				getch();
 				break;
 				
