@@ -1,10 +1,16 @@
+/* Kelompok 3
+   > Adli Fiqrullah             / 2117051075
+   > Alkhadafi Saddam Simparico / 2117051049
+   > Auvar Mahsa Fahlevi        / 2117051027   */
+
+
 #include <iostream>
 #include <conio.h>
 #include <queue>
 using namespace std;
 
 void display(queue <string> sampel){
-    cout << "\n============================================\n";
+    cout << "\n<><><><><><><><><><><><><><><><><><><><><><>\n";
     if(sampel.empty()){
         cout << "\t    Data subsidi kosong";
     }else{
@@ -13,7 +19,7 @@ void display(queue <string> sampel){
         sampel.pop();
         }
     }
-    cout << "\n============================================\n";
+    cout << "\n<><><><><><><><><><><><><><><><><><><><><><>\n";
 }
 
 void QueueSubsidi(){
@@ -24,13 +30,14 @@ void QueueSubsidi(){
 	while(true){
         	system("cls");
        		display(sampel);
-
-		cout << "++========================================++\n"
-		     << "|| [1] - Jumlah antrian subsidi           ||\n"
-		     << "|| [2] - Masukkan data warga ke antrian   ||\n"
-		     << "|| [3] - Hapus data warga dari antrian    ||\n"
-		     << "|| [4] - Exit                             ||\n"
-		     << "++========================================++\n\n" 
+		
+		cout << "/t Selamat datang di menu subsidi\n"
+		     << "<><><><><><><><><><><><><><><><><><><><><><>\n"
+		     << "|| [1] - Jumlah antrian                   ||\n"
+		     << "|| [2] - Pendaftaran anggota subsidi      ||\n"
+		     << "|| [3] - Pengambilan subsidi              ||\n"
+		     << "|| [4] - Keluar                           ||\n"
+		     << "<><><><><><><><><><><><><><><><><><><><><><>\n\n" 
 		     << "Masukkan pilihan anda : "; cin >> pil;
 		     cout<<endl;
 
@@ -41,7 +48,9 @@ void QueueSubsidi(){
 				break;
 				
 			case 2 : 
-                		cout << "Masukkan nama penerima subsidi  : "; cin.ignore(1, '\n'); gets(nama); sampel.push(nama);
+                		cout << "Masukkan nama penerima subsidi  : "; 
+				cin.ignore(1, '\n'); gets(nama); 
+				sampel.push(nama);
                  		cout << "\nAtas nama " << nama << " telah ditambahkan ke dalam antrian\n";
 		        	getch();
 				break;
