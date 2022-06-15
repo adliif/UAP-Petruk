@@ -31,7 +31,8 @@ void QueueSubsidi(){
         	system("cls");
        		display(sampel);
 		
-		cout << "\n++ ==================================== ++\n"
+		cout << endl;
+		cout << "++ ==================================== ++\n"
 		     << "||    Selamat datang di menu subsidi    ||\n"
 		     << "||                                      ||\n"
 		     << "|| [1] Jumlah antrian                   ||\n"
