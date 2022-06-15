@@ -28,8 +28,8 @@ void QueueSubsidi(){
 	int pil;
 	
 	while(true){
-        	system("cls");
-       		display(sampel);
+		system("cls");
+		display(sampel);
 		
 		cout << endl;
 		cout << "++ ==================================== ++\n"
@@ -50,8 +50,7 @@ void QueueSubsidi(){
 				break;
 				
 			case 2 : 
-				cout << "Masukkan nama penerima subsidi  : "; 
-				cin.ignore(1, '\n'); gets(nama); 
+				cout << "Masukkan nama penerima subsidi  : "; cin.ignore(1, '\n'); gets(nama); 
 				sampel.push(nama);
 				cout << "\nAtas nama " << nama << " telah ditambahkan ke dalam antrian\n";
 				getch();
@@ -63,7 +62,7 @@ void QueueSubsidi(){
 					sampel.pop();
 				}else {
 					cout << "Data penerima subsidi Kosong\n";
-                		}
+				}
 				getch();
 				break;
 
