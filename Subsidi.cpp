@@ -31,13 +31,13 @@ void QueueSubsidi(){
         	system("cls");
        		display(sampel);
 		
-		cout << "/t Selamat datang di menu subsidi\n"
-		     << "<><><><><><><><><><><><><><><><><><><><><><>\n"
-		     << "|| [1] - Jumlah antrian                   ||\n"
-		     << "|| [2] - Pendaftaran anggota subsidi      ||\n"
-		     << "|| [3] - Pengambilan subsidi              ||\n"
-		     << "|| [4] - Keluar                           ||\n"
-		     << "<><><><><><><><><><><><><><><><><><><><><><>\n\n" 
+		cout << "\n\t Selamat datang di menu subsidi\n"
+		     << "++ ==================================== ++\n"
+		     << "|| [1] Jumlah antrian                   ||\n"
+		     << "|| [2] Pendaftaran anggota subsidi      ||\n"
+		     << "|| [3] Pengambilan subsidi              ||\n"
+		     << "|| [4] Keluar                           ||\n"
+		     << "++ ==================================== ++\n\n" 
 		     << "Masukkan pilihan anda : "; cin >> pil;
 		     cout<<endl;
 
