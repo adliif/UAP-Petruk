@@ -8,11 +8,14 @@
 #include <queue>
 using namespace std;
 
+//fungsi untuk tampilan
 void display(queue <string> sampel){
     cout << "\n<><><><><><><><><><><><><><><><><><><><><><><>\n";
+	//perulangan jika sampel kosong
     if(sampel.empty()){
         cout << "\t    Data subsidi kosong";
     }else{
+	 //perulangan jika sampel tidak kosong
         while(!sampel.empty()){
         	cout << "|" << sampel.front() << "| ";
         	sampel.pop();
@@ -21,6 +24,7 @@ void display(queue <string> sampel){
     cout << "\n<><><><><><><><><><><><><><><><><><><><><><><>\n";
 }
 
+//fungsi qiu
 void QueueSubsidi(){
 	queue <string> sampel;
 	char nama[100];
@@ -42,6 +46,7 @@ void QueueSubsidi(){
 		     << "Masukkan tujuan Anda : "; cin >> pil;
 		     cout << endl;
 
+		//switch case untuk menu pilihan
 		switch(pil){
 			case 1 : 
 				cout << "Jumlah antrian subsidi : " << sampel.size() << endl;
@@ -79,7 +84,7 @@ void QueueSubsidi(){
 }
 
 int main(){
-	
+	//memanggil fungsi qiu
     QueueSubsidi();
 	
 }
