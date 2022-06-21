@@ -9,7 +9,7 @@
 using namespace std;
 
 void display(queue <string> sampel){
-    cout << "\n<><><><><><><><><><><><><><><><><><><><><><>\n";
+    cout << "\n<><><><><><><><><><><><><><><><><><><><><><><>\n";
     if(sampel.empty()){
         cout << "\t    Data subsidi kosong";
     }else{
@@ -18,7 +18,7 @@ void display(queue <string> sampel){
         	sampel.pop();
         }
     }
-    cout << "\n<><><><><><><><><><><><><><><><><><><><><><>\n";
+    cout << "\n<><><><><><><><><><><><><><><><><><><><><><><>\n";
 }
 
 void QueueSubsidi(){
