@@ -8,7 +8,7 @@
 #include <queue>
 using namespace std;
 
-//fungsi untuk tampilan
+//fungsi untuk tampilan qiu
 void display(queue <string> sampel){
     cout << "\n<><><><><><><><><><><><><><><><><><><><><><><>\n";
 	//perulangan jika sampel kosong
